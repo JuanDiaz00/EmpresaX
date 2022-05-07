@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/logo_pagina.png">
+
+  <title>Contrátenos</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="fa-solid fa-pinata"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <img src="img/logo_transparent.png" alt="" width="100px" height="100px">
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link active" aria-current="page" href="index.html">EmpresaX</a>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link" href="about.html">Acerca de nosotros</a>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link" href="services.html">Servicios</a>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link" href="jobs.html">Empleos</a>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link" href="opinions.html">Opiniones</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <br>
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb d-flex justify-content-md-end">
+      <li class="breadcrumb-item active" aria-current="page">Empleos</li>
+    </ol>
+  </nav>
+
+  <br>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-7 mt-4">
+            <div id="jobs" style="display: block;">
+
+            </div>
+          </div>
+          <div class="col-md-5 mt-4 ">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Busca un empleo</h5>
+                    <form role="form">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">
+                          Nombre
+                        </label>
+                        <input type="text" class="form-control" id="nombre" />
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">
+                          Información de Contacto
+                        </label>
+                        <textarea id="texto_opinion" cols="30" rows="10" class="form-control"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <br>
+                        <input type="submit" value="Registrar" class="btn btn-primary" runat="server"
+                          onclick="registrarTrabajo()" id="submitButton" />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Nuestras Redes Sociales:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>EmpresaX
+            </h6>
+            <p>
+              Empresa dedicada a la organización de eventos sociales, con una gran cantidad
+              de trabajadores en toda Colombia.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Links Utiles
+            </h6>
+            <p>
+              <a href="about.html" class="text-reset">Acerca de Nosotros</a>
+            </p>
+            <p>
+              <a href="services.html" class="text-reset">Servicios</a>
+            </p>
+            <p>
+              <a href="jobs.html" class="text-reset">Empleos</a>
+            </p>
+            <p>
+              <a href="opinions.html" class="text-reset">Opiniones</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Contacto desarrollador de la página.
+            </h6>
+            <p><i class="fas fa-home me-3"></i> Bogotá D.C., Colombia.</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              juane.diazt@konradlorenz.edu.co
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 57 301 234 56</p>
+            <p><i class="fas fa-print me-3"></i> + 57 398 765 43</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      Parcial para diseño de interfaces
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jobs.js"></script>
+</body>
+
+</html>
